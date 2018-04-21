@@ -1,6 +1,6 @@
 # NVIDIA DeepStream SDK 
 
-## INTRODUCTION
+## 1.INTRODUCTION
 
 DeepStream provides an easy-to-use and high-performance SDK for video content analysis, which simplifies development of high-performance video analytics applications powered by deep learning. DeepStream enables customer to make optimum use of underlying GPU architectures, including hardware decoding support, thereby achieving high levels of efficiency, performance, and scale. Furthermore, DeepStream provides a flexible plug-in mechanism for the user to incorporate their custom functionality to video analytics applications to meet their unique needs.
 
@@ -14,7 +14,7 @@ The following are the key features of DeepStream:
 - Takes inference with full precision float type (FP32) or optimized precision2 (FP16 and INT8).
 - Provides flexible analytics workflow which allows users to implement a plug-in to define their inference workflow.
 
-## SYSTEM REQUIREMENTS
+## 2.SYSTEM REQUIREMENTS
 
 DeepStream has the following software dependencies:
 - Ubuntu 16.04 LTS (with GCC 5.4)
@@ -25,7 +25,7 @@ DeepStream has the following software dependencies:
 
 NVIDIA recommends that DeepStream be run on a hardware platform with an NVIDIA Tesla® P4 or P40 graphics card.
 
-## DIRECTORY LAYOUT
+## 3.DIRECTORY LAYOUT
 The DeepStream SDK consists of two main parts: the library and the workflow demonstration samples. The installed DeepStream package includes the directories /lib, /include, /doc, and /samples.
 - The dynamic library libdeepstream.so is in the /lib directory.
 - There are two header files: deepStream.h and module.h.
@@ -38,7 +38,10 @@ for applications without plug-ins.
 - The /samples folder includes examples of decoding, decoding and inference, and
 plug-in implementations. More information can be found in the Samples chap
 
-## CUSTOM CODE
+## 4.CUSTOM HARDWARE
+
+## 5.CUSTOM IMPLEMENTATION
 Some changes are made to run DeepStream as my need.
 
-## LICENSE
+## 6.LICENSE
+[NVIDIA DeepStream SDK License Agreement](LicenseAgreement.pdf)
