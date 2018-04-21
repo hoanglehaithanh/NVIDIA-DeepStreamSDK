@@ -1,0 +1,27 @@
+[DEBUG][14:58:34] Video channels: 1
+[DEBUG][14:58:34] Endless Loop: 0
+[DEBUG][14:58:35] Device name: Tesla P4
+[DEBUG][14:58:35] Use FP32 data type.
+[DEBUG][14:58:40] =========== Network Parameters Begin ===========
+[DEBUG][14:58:40] Network Input:
+[DEBUG][14:58:40] 	>Batch	 :1
+[DEBUG][14:58:40] 	>Channel :3
+[DEBUG][14:58:40] 	>Height  :224
+[DEBUG][14:58:40] 	>Width   :224
+[DEBUG][14:58:40] Network Output [0]
+[DEBUG][14:58:40] 	>Channel :1000
+[DEBUG][14:58:40] 	>Height  :1
+[DEBUG][14:58:40] 	>Width   :1
+[DEBUG][14:58:40] Mean values = [103.907, 116.572,122.602]
+[DEBUG][14:58:40] =========== Network Parameters End   ===========
+[DEBUG][14:58:40] =========== Video Parameters Begin =============
+[DEBUG][14:58:40] 	Video codec     : AVC/H.264
+[DEBUG][14:58:40] 	Frame rate      : 25/1 = 25 fps
+[DEBUG][14:58:40] 	Sequence format : Progressive
+[DEBUG][14:58:40] 	Coded frame size: [224, 224]
+[DEBUG][14:58:40] 	Display area    : [0, 0, 224, 224]
+[DEBUG][14:58:40] 	Chroma format   : YUV 420
+[DEBUG][14:58:40] =========== Video Parameters End   =============
+[DEBUG][14:58:43] Note:
+[DEBUG][14:58:43] [1] The speed of video input is set to 30 FPS.
+[DEBUG][14:58:43] [2] The inference results are recorded in the files under the './log' directory.

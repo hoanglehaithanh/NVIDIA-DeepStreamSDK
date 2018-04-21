@@ -1,0 +1,44 @@
+Package Contents
+==================
+Please refer accompanying "DeepStream User Guide" document for detailed description of the contents of the DeepStream Release Package
+
+The user guide also contains other information to help the user get started with DeepStream, including information about system software and hardware requirements, external software dependencies that the user needs to install to use prior to use of the SDK. 
+
+What's new in DeepStream 1.5:
+===============================
+Toolchain versions required:
+------------------------------
+* NVIDIA CUDA 9.0 
+* NVIDIA TensorRT 3.0 & cuDNN 7
+* NVIDIA VideoSDK 8.0
+* NVIDIA Display Driver ver384
+
+Features:
+-----------
+* Support for TensorRT 3.0 and CUDA 9.0
+
+* Support for maximum batch size
+DeepStream 1.5 enables the user to sepcify the maximum batch size, which the number of frames upto which DeepStream shall attempt to batch frames together for processing in the pipeline. Batching is particularly useful in cases involving low channel count wherein processing one frame from each input video at a time can be inefficient
+
+* Support for UFF models
+UFF models, as supported by TensorRT 3.0, provide a means by which to tun TensorFlow-trained models through a Tenslor-to-UFF conversion process as outlined in the TensorRT3.0 documentation.
+
+* Smart Decode feature
+A new sample named nvSmartDecInfer_detection has been added that illustrates the "smart decode" feature, whereby only I-frames in the input video are analyzed by the DeepStream pipeline, thereby allowing more input channels to be supported for relevant use cases.
+
+* Resnet 10 network
+A resnet-10 based 4-class network is being distributed that enables 30 channels of 30fps 720p HD video 
+
+API changes
+============
+* deepStreamInit() needs to be called by samples upfront before using the library
+* createDeviceWorker() function now accepts an optional maxBatchSize parameter
+* addInferenceTask_uff() function has been added to enable loading of UFF models
+
+Known Issues
+=============
+* DeepStream does not support container files like mp4. Please use raw media files for input.
+* Device ID may  not be validated by deepstream when calling into createDeviceWorker. Incorrect parameters passed may real to software crashing
+* It is worth noting that CudaStreams created per decoder are created by DeepStream using the cudaStreamNonBlocking flag. Please take this into consideration while reusing the streams, for instance in the decode callback routine
+* Not all TensorFlow layers types are supported by TensorRT 3.0, as listed in the TensorRT documentation. This in turn limits the TensorFlow models that can be run on DeepStream using UFF.
+

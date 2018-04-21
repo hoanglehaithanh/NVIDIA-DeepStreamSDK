@@ -1,0 +1,124 @@
+.SUFFIXES:
+
+include ../../makes/defines.inc
+
+ISA := $(shell uname -m)
+ifeq ($(ISA), x86_64)
+CC = g++
+CUCC = /usr/local/$(CUDAVERSION)/bin/nvcc -m64
+else ######## 
+$(error Auto-detection of platform failed. x86_64)
+endif
+
+SHELL=/bin/bash
+
+ROOT_PATH=.
+OUTDIR=../bin
+
+# DeepStream sdk
+DEEPSTREAM_INC_PATH = "../../include"
+DEEPSTREAM_LIB_PATH = "../../lib"
+
+# OpenGL
+OPENGL_INC_PATH=$(VIDEOSDK_INSTALL_PATH)"/Samples/common/inc"
+OPENGL_LIB_PATH=$(NVIDIA_DISPLAY_DRIVER_PATH)
+# Opencv
+OPENCV_INC_PATH=`pkg-config --cflags opencv`
+OPENCV_LIB_PATH=`pkg-config --libs opencv`
+
+INCPATHS    =-I$(CUDA_INC_PATH) -I$(DEEPSTREAM_INC_PATH) -I$(CUVID_INC_PATH) -I$(OPENGL_INC_PATH) $(OPENCV_INC_PATH) -I"../common" 
+LIBPATHS    =-L$(CUDA_LIB_PATH) -L$(TENSORRT_LIB_PATH) -L$(DEEPSTREAM_LIB_PATH) -L$(CUVID_LIB_PATH) -L$(OPENGL_LIB_PATH) $(OPENCV_LIB_PATH)
+
+# Gencode arguments
+GPU_ARCHS   = 30 32 35 37 50 52 53 60 61 # 60 for GP100
+SMS = $(GPU_ARCHS)
+
+ifeq ($(GENCODES),)
+# Generate SASS code for each SM architecture listed in $(SMS)
+$(foreach sm,$(SMS),$(eval GENCODES += -gencode arch=compute_$(sm),code=sm_$(sm)))
+
+# Generate PTX code from the highest SM architecture in $(SMS) to guarantee forward-compatibility
+HIGHEST_SM := $(lastword $(sort $(SMS)))
+ifneq ($(HIGHEST_SM),)
+GENCODES += -gencode arch=compute_$(HIGHEST_SM),code=compute_$(HIGHEST_SM)
+endif
+endif
+
+.SUFFIXES:
+
+COMMON_FLAGS += -D_REENTRANT
+
+COMMON_FLAGS += -std=c++11 $(INCPATHS)
+COMMON_LD_FLAGS=$(LIBPATHS) -L$(OUTDIR)
+
+LOGDIR    =./log
+OBJDIR    =$(call concat,$(OUTDIR),/chobj)
+DOBJDIR   =$(call concat,$(OUTDIR),/dchobj)
+
+#COMMON_LIBS = -lnvinfer -lnvcaffe_parser -ldeepstream -lcuda -lcudart -lnvcuvid -lGL -lGLU -lXmu -lglut -lpthread ./GL/lib/linux/x86_64/libGLEW.a 
+COMMON_LIBS = -lnvinfer -lnvcaffe_parser -ldeepstream -lcuda -lcudart -lnvcuvid -lGL -lGLU -lXmu -lglut -lpthread $(VIDEOSDK_INSTALL_PATH)"/Samples/common/lib/linux/x86_64/libGLEW.a"
+COMMON_LIBS += -Wl,-rpath=$(CUDA_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(TENSORRT_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(DEEPSTREAM_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(CUVID_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(OPENGL_LIB_PATH)
+
+LIBS  =$(COMMON_LIBS)
+DLIBS =$(COMMON_LIBS) 
+OBJS   =$(patsubst %.cpp, $(OBJDIR)/%.o, $(wildcard *.cpp))
+DOBJS  =$(patsubst %.cpp, $(DOBJDIR)/%.o, $(wildcard *.cpp))
+CUOBJS   =$(patsubst %.cu, $(OBJDIR)/%.o, $(notdir $(wildcard *.cu)))
+CUDOBJS  =$(patsubst %.cu, $(DOBJDIR)/%.o, $(notdir $(wildcard *.cu)))
+
+
+
+CFLAGS=$(COMMON_FLAGS)
+CFLAGSD=$(COMMON_FLAGS) -g
+CUFLAGS=$(COMMON_FLAGS) $(GENCODES)
+CUFLAGSD=$(COMMON_FLAGS) $(GENCODES) -g -G -lineinfo
+LFLAGS=$(COMMON_LD_FLAGS)
+LFLAGSD=$(COMMON_LD_FLAGS)
+
+all: release
+release : $(OUTDIR)/$(OUTNAME_RELEASE)
+debug   : $(OUTDIR)/$(OUTNAME_DEBUG)
+
+$(OUTDIR)/$(OUTNAME_RELEASE) : $(OBJS) $(CUOBJS)
+	$(ECHO) Linking: $@
+	$(AT)$(CC) -o $@ $^ $(LFLAGS) -Wl,--start-group $(LIBS) -Wl,--end-group
+
+$(OUTDIR)/$(OUTNAME_DEBUG) : $(DOBJS) $(CUDOBJS)
+	$(ECHO) Linking: $@
+	$(AT)$(CC) -o $@ $^ $(LFLAGSD) -Wl,--start-group $(DLIBS) -Wl,--end-group
+
+######################################################################### CPP
+$(OBJDIR)/%.o: %.cpp
+	$(AT)if [ ! -d $(OBJDIR) ]; then mkdir -p $(OBJDIR); fi
+	$(call make-depend,$<,$@,$(subst .o,.d,$@))
+	$(ECHO) Compiling: $<
+	$(AT)$(CC) $(CFLAGS) -c -o $@ $<
+
+$(DOBJDIR)/%.o: %.cpp
+	$(AT)if [ ! -d $(DOBJDIR) ]; then mkdir -p $(DOBJDIR); fi
+	$(call make-depend,$<,$@,$(subst .o,.d,$@))
+	$(ECHO) Compiling: $<
+	$(AT)$(CC) $(CFLAGSD) -c -o $@ $<
+
+######################################################################### CU
+$(OBJDIR)/%.o: %.cu
+	$(AT)if [ ! -d $(OBJDIR) ]; then mkdir -p $(OBJDIR); fi
+	$(ECHO) Compiling: $<
+	$(AT)$(CUCC) $(CUFLAGS) -c -o $@ $<
+
+$(DOBJDIR)/%.o: %.cu
+	$(AT)if [ ! -d $(DOBJDIR) ]; then mkdir -p $(DOBJDIR); fi
+	$(ECHO) Compiling: $<
+	$(AT)$(CUCC) $(CUFLAGSD) -c -o $@ $<
+
+clean:
+	$(ECHO) Cleaning...
+	$(AT)-rm -rf $(OBJDIR) $(DOBJDIR) $(OUTDIR)/$(OUTNAME_RELEASE) $(OUTDIR)/$(OUTNAME_DEBUG) $(LOGDIR)
+
+ifneq "$(MAKECMDGOALS)" "clean"
+  -include $(OBJDIR)/*.d $(DOBJDIR)/*.d
+endif

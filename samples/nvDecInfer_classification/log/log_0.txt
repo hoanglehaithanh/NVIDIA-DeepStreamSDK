@@ -1,0 +1,750 @@
+>>[Inference][video 0][frame 0] belongs to: 
+  0.9966 - "n01440764 tench, Tinca tinca", [Hit]
+  0.0030 - "n02514041 barracouta, snoek"
+  0.0004 - "n02536864 coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch"
+  0.0001 - "n02640242 sturgeon"
+  0.0000 - "n02526121 eel"
+  Video[0] total frames = 1
+  Video[0] hit frames = 1
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 1] belongs to: 
+  0.7798 - "n01873310 platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus"
+  0.0351 - "n01440764 tench, Tinca tinca", [Hit]
+  0.0331 - "n02443114 polecat, fitch, foulmart, foumart, Mustela putorius"
+  0.0274 - "n02441942 weasel"
+  0.0130 - "n10565667 scuba diver"
+  Video[0] total frames = 2
+  Video[0] hit frames = 2
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 2] belongs to: 
+  1.0000 - "n01860187 black swan, Cygnus atratus", [Hit]
+  0.0000 - "n01855672 goose"
+  0.0000 - "n02018207 American coot, marsh hen, mud hen, water hen, Fulica americana"
+  0.0000 - "n02017213 European gallinule, Porphyrio porphyrio"
+  0.0000 - "n01847000 drake"
+  Video[0] total frames = 3
+  Video[0] hit frames = 3
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 3] belongs to: 
+  0.9997 - "n01860187 black swan, Cygnus atratus", [Hit]
+  0.0001 - "n01855672 goose"
+  0.0001 - "n02017213 European gallinule, Porphyrio porphyrio"
+  0.0000 - "n02007558 flamingo"
+  0.0000 - "n02018207 American coot, marsh hen, mud hen, water hen, Fulica americana"
+  Video[0] total frames = 4
+  Video[0] hit frames = 4
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 4] belongs to: 
+  0.9975 - "n01860187 black swan, Cygnus atratus", [Hit]
+  0.0021 - "n02002724 black stork, Ciconia nigra"
+  0.0002 - "n02017213 European gallinule, Porphyrio porphyrio"
+  0.0000 - "n01518878 ostrich, Struthio camelus"
+  0.0000 - "n02012849 crane"
+  Video[0] total frames = 5
+  Video[0] hit frames = 5
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 5] belongs to: 
+  1.0000 - "n02843684 birdhouse", [Hit]
+  0.0000 - "n03710193 mailbox, letter box"
+  0.0000 - "n03908714 pencil sharpener"
+  0.0000 - "n03026506 Christmas stocking"
+  0.0000 - "n02971356 carton"
+  Video[0] total frames = 6
+  Video[0] hit frames = 6
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 6] belongs to: 
+  0.9476 - "n02843684 birdhouse", [Hit]
+  0.0241 - "n03710193 mailbox, letter box"
+  0.0200 - "n02859443 boathouse"
+  0.0041 - "n03127925 crate"
+  0.0015 - "n03014705 chest"
+  Video[0] total frames = 7
+  Video[0] hit frames = 7
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 7] belongs to: 
+  0.8215 - "n02843684 birdhouse", [Hit]
+  0.0480 - "n04522168 vase"
+  0.0298 - "n03991062 pot, flowerpot"
+  0.0270 - "n03710193 mailbox, letter box"
+  0.0075 - "n04548280 wall clock"
+  Video[0] total frames = 8
+  Video[0] hit frames = 8
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 8] belongs to: 
+  0.9813 - "n02870880 bookcase", [Hit]
+  0.0117 - "n03290653 entertainment center"
+  0.0021 - "n03661043 library"
+  0.0018 - "n03337140 file, file cabinet, filing cabinet"
+  0.0008 - "n03179701 desk"
+  Video[0] total frames = 9
+  Video[0] hit frames = 9
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 9] belongs to: 
+  0.8570 - "n02870880 bookcase", [Hit]
+  0.0338 - "n03742115 medicine chest, medicine cabinet"
+  0.0276 - "n03337140 file, file cabinet, filing cabinet"
+  0.0171 - "n03018349 china cabinet, china closet"
+  0.0151 - "n03179701 desk"
+  Video[0] total frames = 10
+  Video[0] hit frames = 10
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 10] belongs to: 
+  0.9425 - "n02870880 bookcase", [Hit]
+  0.0135 - "n03179701 desk"
+  0.0129 - "n03290653 entertainment center"
+  0.0063 - "n03337140 file, file cabinet, filing cabinet"
+  0.0019 - "n03661043 library"
+  Video[0] total frames = 11
+  Video[0] hit frames = 11
+  Video[0] accuracy = 1
+
+>>[Inference][video 0][frame 11] belongs to: 
+  0.5580 - "n02892201 brass, memorial tablet, plaque"
+  0.2624 - "n07248320 book jacket, dust cover, dust jacket, dust wrapper"
+  0.0364 - "n06794110 street sign"
+  0.0244 - "n07565083 menu"
+  0.0172 - "n03871628 packet"
+  Video[0] total frames = 12
+  Video[0] hit frames = 11
+  Video[0] accuracy = 0.916667
+
+>>[Inference][video 0][frame 12] belongs to: 
+  0.2900 - "n02808304 bath towel"
+  0.1604 - "n03887697 paper towel", [Hit]
+  0.1146 - "n03938244 pillow"
+  0.1006 - "n04344873 studio couch, day bed"
+  0.0703 - "n03788365 mosquito net"
+  Video[0] total frames = 13
+  Video[0] hit frames = 12
+  Video[0] accuracy = 0.923077
+
+>>[Inference][video 0][frame 13] belongs to: 
+  0.5665 - "n02708093 analog clock"
+  0.2240 - "n04548280 wall clock"
+  0.0678 - "n03706229 magnetic compass"
+  0.0368 - "n03841143 odometer, hodometer, mileometer, milometer"
+  0.0357 - "n03196217 digital clock"
+  Video[0] total frames = 14
+  Video[0] hit frames = 12
+  Video[0] accuracy = 0.857143
+
+>>[Inference][video 0][frame 14] belongs to: 
+  0.6459 - "n15075141 toilet tissue, toilet paper, bathroom tissue"
+  0.3343 - "n03887697 paper towel", [Hit]
+  0.0040 - "n04344873 studio couch, day bed"
+  0.0033 - "n03938244 pillow"
+  0.0018 - "n04049303 rain barrel"
+  Video[0] total frames = 15
+  Video[0] hit frames = 13
+  Video[0] accuracy = 0.866667
+
+>>[Inference][video 0][frame 15] belongs to: 
+  0.3617 - "n02066245 grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus"
+  0.3251 - "n02058221 albatross, mollymawk"
+  0.0585 - "n04273569 speedboat", [Hit]
+  0.0538 - "n04266014 space shuttle"
+  0.0491 - "n02071294 killer whale, killer, orca, grampus, sea wolf, Orcinus orca"
+  Video[0] total frames = 16
+  Video[0] hit frames = 14
+  Video[0] accuracy = 0.875
+
+>>[Inference][video 0][frame 16] belongs to: 
+  0.9916 - "n04273569 speedboat", [Hit]
+  0.0040 - "n02704792 amphibian, amphibious vehicle"
+  0.0028 - "n03873416 paddle, boat paddle"
+  0.0005 - "n02951358 canoe"
+  0.0004 - "n04252077 snowmobile"
+  Video[0] total frames = 17
+  Video[0] hit frames = 15
+  Video[0] accuracy = 0.882353
+
+>>[Inference][video 0][frame 17] belongs to: 
+  0.9997 - "n04273569 speedboat", [Hit]
+  0.0002 - "n03662601 lifeboat"
+  0.0001 - "n03344393 fireboat"
+  0.0001 - "n02704792 amphibian, amphibious vehicle"
+  0.0000 - "n03873416 paddle, boat paddle"
+  Video[0] total frames = 18
+  Video[0] hit frames = 16
+  Video[0] accuracy = 0.888889
+
+>>[Inference][video 0][frame 18] belongs to: 
+  0.7317 - "n04525305 vending machine", [Hit]
+  0.2631 - "n02977058 cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM"
+  0.0016 - "n03902125 pay-phone, pay-station"
+  0.0009 - "n04443257 tobacco shop, tobacconist shop, tobacconist"
+  0.0006 - "n04070727 refrigerator, icebox"
+  Video[0] total frames = 19
+  Video[0] hit frames = 17
+  Video[0] accuracy = 0.894737
+
+>>[Inference][video 0][frame 19] belongs to: 
+  0.9953 - "n04525305 vending machine", [Hit]
+  0.0020 - "n03902125 pay-phone, pay-station"
+  0.0011 - "n04243546 slot, one-armed bandit"
+  0.0005 - "n02977058 cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM"
+  0.0004 - "n04074963 remote control, remote"
+  Video[0] total frames = 20
+  Video[0] hit frames = 18
+  Video[0] accuracy = 0.9
+
+>>[Inference][video 0][frame 20] belongs to: 
+  0.8194 - "n04525305 vending machine", [Hit]
+  0.1694 - "n03983396 pop bottle, soda bottle"
+  0.0030 - "n04070727 refrigerator, icebox"
+  0.0022 - "n02977058 cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM"
+  0.0017 - "n03710193 mailbox, letter box"
+  Video[0] total frames = 21
+  Video[0] hit frames = 19
+  Video[0] accuracy = 0.904762
+
+>>[Inference][video 0][frame 21] belongs to: 
+  0.6893 - "n07753592 banana", [Hit]
+  0.0585 - "n01943899 conch"
+  0.0375 - "n07747607 orange"
+  0.0352 - "n07615774 ice lolly, lolly, lollipop, popsicle"
+  0.0200 - "n03627232 knot"
+  Video[0] total frames = 22
+  Video[0] hit frames = 20
+  Video[0] accuracy = 0.909091
+
+>>[Inference][video 0][frame 22] belongs to: 
+  1.0000 - "n07753592 banana", [Hit]
+  0.0000 - "n07753275 pineapple, ananas"
+  0.0000 - "n07717410 acorn squash"
+  0.0000 - "n07760859 custard apple"
+  0.0000 - "n02206856 bee"
+  Video[0] total frames = 23
+  Video[0] hit frames = 21
+  Video[0] accuracy = 0.913043
+
+>>[Inference][video 0][frame 23] belongs to: 
+  0.4861 - "n07753592 banana", [Hit]
+  0.4532 - "n07716906 spaghetti squash"
+  0.0228 - "n07717556 butternut squash"
+  0.0143 - "n07717410 acorn squash"
+  0.0052 - "n07754684 jackfruit, jak, jack"
+  Video[0] total frames = 24
+  Video[0] hit frames = 22
+  Video[0] accuracy = 0.916667
+
+>>[Inference][video 0][frame 24] belongs to: 
+  0.9966 - "n03445777 golf ball", [Hit]
+  0.0029 - "n03942813 ping-pong ball"
+  0.0002 - "n02799071 baseball"
+  0.0001 - "n04409515 tennis ball"
+  0.0000 - "n03937543 pill bottle"
+  Video[0] total frames = 25
+  Video[0] hit frames = 23
+  Video[0] accuracy = 0.92
+
+>>[Inference][video 0][frame 25] belongs to: 
+  0.9892 - "n03445777 golf ball", [Hit]
+  0.0050 - "n03920288 Petri dish"
+  0.0024 - "n03942813 ping-pong ball"
+  0.0009 - "n01910747 jellyfish"
+  0.0003 - "n04332243 strainer"
+  Video[0] total frames = 26
+  Video[0] hit frames = 24
+  Video[0] accuracy = 0.923077
+
+>>[Inference][video 0][frame 26] belongs to: 
+  1.0000 - "n03445777 golf ball", [Hit]
+  0.0000 - "n03942813 ping-pong ball"
+  0.0000 - "n02799071 baseball"
+  0.0000 - "n04254680 soccer ball"
+  0.0000 - "n04258138 solar dish, solar collector, solar furnace"
+  Video[0] total frames = 27
+  Video[0] hit frames = 25
+  Video[0] accuracy = 0.925926
+
+>>[Inference][video 0][frame 27] belongs to: 
+  0.9927 - "n03544143 hourglass", [Hit]
+  0.0034 - "n02815834 beaker"
+  0.0011 - "n04560804 water jug"
+  0.0008 - "n04317175 stethoscope"
+  0.0006 - "n03692522 loupe, jeweler's loupe"
+  Video[0] total frames = 28
+  Video[0] hit frames = 26
+  Video[0] accuracy = 0.928571
+
+>>[Inference][video 0][frame 28] belongs to: 
+  0.9995 - "n03544143 hourglass", [Hit]
+  0.0002 - "n03141823 crutch"
+  0.0001 - "n03467068 guillotine"
+  0.0000 - "n04501370 turnstile"
+  0.0000 - "n04005630 prison, prison house"
+  Video[0] total frames = 29
+  Video[0] hit frames = 27
+  Video[0] accuracy = 0.931035
+
+>>[Inference][video 0][frame 29] belongs to: 
+  0.9999 - "n03544143 hourglass", [Hit]
+  0.0001 - "n02815834 beaker"
+  0.0000 - "n03916031 perfume, essence"
+  0.0000 - "n03637318 lampshade, lamp shade"
+  0.0000 - "n04591713 wine bottle"
+  Video[0] total frames = 30
+  Video[0] hit frames = 28
+  Video[0] accuracy = 0.933333
+
+>>[Inference][video 0][frame 30] belongs to: 
+  0.1414 - "n03627232 knot", [Hit]
+  0.1387 - "n01980166 fiddler crab"
+  0.1096 - "n01770393 scorpion"
+  0.0655 - "n02999410 chain"
+  0.0566 - "n03874599 padlock"
+  Video[0] total frames = 31
+  Video[0] hit frames = 29
+  Video[0] accuracy = 0.935484
+
+>>[Inference][video 0][frame 31] belongs to: 
+  1.0000 - "n03627232 knot", [Hit]
+  0.0000 - "n04367480 swab, swob, mop"
+  0.0000 - "n04599235 wool, woolen, woollen"
+  0.0000 - "n02999410 chain"
+  0.0000 - "n03532672 hook, claw"
+  Video[0] total frames = 32
+  Video[0] hit frames = 30
+  Video[0] accuracy = 0.9375
+
+>>[Inference][video 0][frame 32] belongs to: 
+  0.4123 - "n03773504 missile", [Hit]
+  0.3128 - "n04008634 projectile, missile"
+  0.2261 - "n03126707 crane"
+  0.0107 - "n02690373 airliner"
+  0.0097 - "n04592741 wing"
+  Video[0] total frames = 33
+  Video[0] hit frames = 31
+  Video[0] accuracy = 0.939394
+
+>>[Inference][video 0][frame 33] belongs to: 
+  0.8512 - "n03240683 drilling platform, offshore rig"
+  0.0970 - "n04266014 space shuttle"
+  0.0261 - "n03126707 crane"
+  0.0125 - "n03773504 missile", [Hit]
+  0.0113 - "n04008634 projectile, missile"
+  Video[0] total frames = 34
+  Video[0] hit frames = 32
+  Video[0] accuracy = 0.941176
+
+>>[Inference][video 0][frame 34] belongs to: 
+  0.9987 - "n03788195 mosque", [Hit]
+  0.0012 - "n03220513 dome"
+  0.0001 - "n03956157 planetarium"
+  0.0000 - "n04562935 water tower"
+  0.0000 - "n04346328 stupa, tope"
+  Video[0] total frames = 35
+  Video[0] hit frames = 33
+  Video[0] accuracy = 0.942857
+
+>>[Inference][video 0][frame 35] belongs to: 
+  0.9999 - "n03788195 mosque", [Hit]
+  0.0001 - "n03220513 dome"
+  0.0000 - "n03837869 obelisk"
+  0.0000 - "n03877845 palace"
+  0.0000 - "n04346328 stupa, tope"
+  Video[0] total frames = 36
+  Video[0] hit frames = 34
+  Video[0] accuracy = 0.944444
+
+>>[Inference][video 0][frame 36] belongs to: 
+  0.9999 - "n03788195 mosque", [Hit]
+  0.0001 - "n03220513 dome"
+  0.0000 - "n03903868 pedestal, plinth, footstall"
+  0.0000 - "n03956157 planetarium"
+  0.0000 - "n03781244 monastery"
+  Video[0] total frames = 37
+  Video[0] hit frames = 35
+  Video[0] accuracy = 0.945946
+
+>>[Inference][video 0][frame 37] belongs to: 
+  0.9583 - "n03924679 photocopier", [Hit]
+  0.0147 - "n02727426 apiary, bee house"
+  0.0120 - "n03337140 file, file cabinet, filing cabinet"
+  0.0050 - "n03127925 crate"
+  0.0047 - "n04004767 printer"
+  Video[0] total frames = 38
+  Video[0] hit frames = 36
+  Video[0] accuracy = 0.947368
+
+>>[Inference][video 0][frame 38] belongs to: 
+  0.6086 - "n03337140 file, file cabinet, filing cabinet"
+  0.3450 - "n03924679 photocopier", [Hit]
+  0.0108 - "n04125021 safe"
+  0.0100 - "n03127925 crate"
+  0.0067 - "n02971356 carton"
+  Video[0] total frames = 39
+  Video[0] hit frames = 37
+  Video[0] accuracy = 0.948718
+
+>>[Inference][video 0][frame 39] belongs to: 
+  0.4802 - "n03924679 photocopier", [Hit]
+  0.3908 - "n04004767 printer"
+  0.0276 - "n04179913 sewing machine"
+  0.0250 - "n04372370 switch, electric switch, electrical switch"
+  0.0096 - "n04505470 typewriter keyboard"
+  Video[0] total frames = 40
+  Video[0] hit frames = 38
+  Video[0] accuracy = 0.95
+
+>>[Inference][video 0][frame 40] belongs to: 
+  0.8198 - "n03967562 plow, plough", [Hit]
+  0.0733 - "n04428191 thresher, thrasher, threshing machine"
+  0.0456 - "n03697007 lumbermill, sawmill"
+  0.0425 - "n04465501 tractor"
+  0.0137 - "n03496892 harvester, reaper"
+  Video[0] total frames = 41
+  Video[0] hit frames = 39
+  Video[0] accuracy = 0.951219
+
+>>[Inference][video 0][frame 41] belongs to: 
+  0.9814 - "n03967562 plow, plough", [Hit]
+  0.0045 - "n04465501 tractor"
+  0.0034 - "n04482393 tricycle, trike, velocipede"
+  0.0031 - "n04428191 thresher, thrasher, threshing machine"
+  0.0011 - "n03496892 harvester, reaper"
+  Video[0] total frames = 42
+  Video[0] hit frames = 40
+  Video[0] accuracy = 0.952381
+
+>>[Inference][video 0][frame 42] belongs to: 
+  0.9995 - "n03967562 plow, plough", [Hit]
+  0.0003 - "n04465501 tractor"
+  0.0001 - "n02797295 barrow, garden cart, lawn cart, wheelbarrow"
+  0.0001 - "n03496892 harvester, reaper"
+  0.0000 - "n03649909 lawn mower, mower"
+  Video[0] total frames = 43
+  Video[0] hit frames = 41
+  Video[0] accuracy = 0.953488
+
+>>[Inference][video 0][frame 43] belongs to: 
+  0.7354 - "n04039381 racket, racquet", [Hit]
+  0.1606 - "n03942813 ping-pong ball"
+  0.1040 - "n04409515 tennis ball"
+  0.0000 - "n03982430 pool table, billiard table, snooker table"
+  0.0000 - "n04540053 volleyball"
+  Video[0] total frames = 44
+  Video[0] hit frames = 42
+  Video[0] accuracy = 0.954545
+
+>>[Inference][video 0][frame 44] belongs to: 
+  0.9474 - "n04039381 racket, racquet", [Hit]
+  0.0290 - "n02879718 bow"
+  0.0072 - "n04409515 tennis ball"
+  0.0038 - "n09835506 ballplayer, baseball player"
+  0.0032 - "n02641379 gar, garfish, garpike, billfish, Lepisosteus osseus"
+  Video[0] total frames = 45
+  Video[0] hit frames = 43
+  Video[0] accuracy = 0.955556
+
+>>[Inference][video 0][frame 45] belongs to: 
+  0.9260 - "n04039381 racket, racquet", [Hit]
+  0.0628 - "n04409515 tennis ball"
+  0.0050 - "n03942813 ping-pong ball"
+  0.0022 - "n09835506 ballplayer, baseball player"
+  0.0017 - "n04540053 volleyball"
+  Video[0] total frames = 46
+  Video[0] hit frames = 44
+  Video[0] accuracy = 0.956522
+
+>>[Inference][video 0][frame 46] belongs to: 
+  0.4212 - "n02992529 cellular telephone, cellular phone, cellphone, cell, mobile phone"
+  0.3158 - "n04074963 remote control, remote", [Hit]
+  0.1829 - "n03485407 hand-held computer, hand-held microcomputer"
+  0.0327 - "n03584254 iPod"
+  0.0117 - "n04041544 radio, wireless"
+  Video[0] total frames = 47
+  Video[0] hit frames = 45
+  Video[0] accuracy = 0.957447
+
+>>[Inference][video 0][frame 47] belongs to: 
+  0.9909 - "n04074963 remote control, remote", [Hit]
+  0.0020 - "n03187595 dial telephone, dial phone"
+  0.0018 - "n02992529 cellular telephone, cellular phone, cellphone, cell, mobile phone"
+  0.0012 - "n04505470 typewriter keyboard"
+  0.0009 - "n03075370 combination lock"
+  Video[0] total frames = 48
+  Video[0] hit frames = 46
+  Video[0] accuracy = 0.958333
+
+>>[Inference][video 0][frame 48] belongs to: 
+  0.9794 - "n04074963 remote control, remote", [Hit]
+  0.0057 - "n03777754 modem"
+  0.0036 - "n02992529 cellular telephone, cellular phone, cellphone, cell, mobile phone"
+  0.0026 - "n03584254 iPod"
+  0.0017 - "n04118776 rule, ruler"
+  Video[0] total frames = 49
+  Video[0] hit frames = 47
+  Video[0] accuracy = 0.959184
+
+>>[Inference][video 0][frame 49] belongs to: 
+  0.9999 - "n04146614 school bus", [Hit]
+  0.0000 - "n03895866 passenger car, coach, carriage"
+  0.0000 - "n03796401 moving van"
+  0.0000 - "n04467665 trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi"
+  0.0000 - "n03769881 minibus"
+  Video[0] total frames = 50
+  Video[0] hit frames = 48
+  Video[0] accuracy = 0.96
+
+>>[Inference][video 0][frame 50] belongs to: 
+  0.9991 - "n04146614 school bus", [Hit]
+  0.0007 - "n03769881 minibus"
+  0.0001 - "n03895866 passenger car, coach, carriage"
+  0.0000 - "n04487081 trolleybus, trolley coach, trackless trolley"
+  0.0000 - "n02701002 ambulance"
+  Video[0] total frames = 51
+  Video[0] hit frames = 49
+  Video[0] accuracy = 0.960784
+
+>>[Inference][video 0][frame 51] belongs to: 
+  0.2354 - "n02701002 ambulance"
+  0.2164 - "n04146614 school bus", [Hit]
+  0.0692 - "n02930766 cab, hack, taxi, taxicab"
+  0.0643 - "n03769881 minibus"
+  0.0615 - "n03345487 fire engine, fire truck"
+  Video[0] total frames = 52
+  Video[0] hit frames = 50
+  Video[0] accuracy = 0.961538
+
+>>[Inference][video 0][frame 52] belongs to: 
+  0.2056 - "n02066245 grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus"
+  0.1704 - "n01873310 platypus, duckbill, duckbilled platypus, duck-billed platypus, Ornithorhynchus anatinus"
+  0.0954 - "n02074367 dugong, Dugong dugon"
+  0.0683 - "n01644900 tailed frog, bell toad, ribbed toad, tailed toad, Ascaphus trui"
+  0.0393 - "n02444819 otter"
+  Video[0] total frames = 53
+  Video[0] hit frames = 50
+  Video[0] accuracy = 0.943396
+
+>>[Inference][video 0][frame 53] belongs to: 
+  0.8535 - "n04251144 snorkel", [Hit]
+  0.0195 - "n09256479 coral reef"
+  0.0164 - "n02074367 dugong, Dugong dugon"
+  0.0112 - "n02071294 killer whale, killer, orca, grampus, sea wolf, Orcinus orca"
+  0.0098 - "n09332890 lakeside, lakeshore"
+  Video[0] total frames = 54
+  Video[0] hit frames = 51
+  Video[0] accuracy = 0.944444
+
+>>[Inference][video 0][frame 54] belongs to: 
+  0.7435 - "n04251144 snorkel", [Hit]
+  0.0986 - "n04355933 sunglass"
+  0.0867 - "n04356056 sunglasses, dark glasses, shades"
+  0.0147 - "n09229709 bubble"
+  0.0146 - "n03920288 Petri dish"
+  Video[0] total frames = 55
+  Video[0] hit frames = 52
+  Video[0] accuracy = 0.945455
+
+>>[Inference][video 0][frame 55] belongs to: 
+  0.8406 - "n04355933 sunglass", [Hit]
+  0.1576 - "n04356056 sunglasses, dark glasses, shades"
+  0.0014 - "n02965783 car mirror"
+  0.0001 - "n03692522 loupe, jeweler's loupe"
+  0.0000 - "n03400231 frying pan, frypan, skillet"
+  Video[0] total frames = 56
+  Video[0] hit frames = 53
+  Video[0] accuracy = 0.946429
+
+>>[Inference][video 0][frame 56] belongs to: 
+  0.7949 - "n04355933 sunglass", [Hit]
+  0.1862 - "n04356056 sunglasses, dark glasses, shades"
+  0.0039 - "n04584207 wig"
+  0.0023 - "n04162706 seat belt, seatbelt"
+  0.0019 - "n03710721 maillot, tank suit"
+  Video[0] total frames = 57
+  Video[0] hit frames = 54
+  Video[0] accuracy = 0.947368
+
+>>[Inference][video 0][frame 57] belongs to: 
+  0.9409 - "n04355933 sunglass", [Hit]
+  0.0591 - "n04356056 sunglasses, dark glasses, shades"
+  0.0000 - "n03692522 loupe, jeweler's loupe"
+  0.0000 - "n02883205 bow tie, bow-tie, bowtie"
+  0.0000 - "n02892767 brassiere, bra, bandeau"
+  Video[0] total frames = 58
+  Video[0] hit frames = 55
+  Video[0] accuracy = 0.948276
+
+>>[Inference][video 0][frame 58] belongs to: 
+  0.3681 - "n03785016 moped"
+  0.2665 - "n04482393 tricycle, trike, velocipede", [Hit]
+  0.1233 - "n03127747 crash helmet"
+  0.1178 - "n03791053 motor scooter, scooter"
+  0.0296 - "n03792782 mountain bike, all-terrain bike, off-roader"
+  Video[0] total frames = 59
+  Video[0] hit frames = 56
+  Video[0] accuracy = 0.949153
+
+>>[Inference][video 0][frame 59] belongs to: 
+  0.6171 - "n03785016 moped"
+  0.3589 - "n04482393 tricycle, trike, velocipede", [Hit]
+  0.0130 - "n03792782 mountain bike, all-terrain bike, off-roader"
+  0.0065 - "n02835271 bicycle-built-for-two, tandem bicycle, tandem"
+  0.0035 - "n03791053 motor scooter, scooter"
+  Video[0] total frames = 60
+  Video[0] hit frames = 57
+  Video[0] accuracy = 0.95
+
+>>[Inference][video 0][frame 60] belongs to: 
+  0.9872 - "n04482393 tricycle, trike, velocipede", [Hit]
+  0.0085 - "n04509417 unicycle, monocycle"
+  0.0030 - "n03785016 moped"
+  0.0007 - "n03791053 motor scooter, scooter"
+  0.0003 - "n02835271 bicycle-built-for-two, tandem bicycle, tandem"
+  Video[0] total frames = 61
+  Video[0] hit frames = 58
+  Video[0] accuracy = 0.95082
+
+>>[Inference][video 0][frame 61] belongs to: 
+  0.5096 - "n04507155 umbrella", [Hit]
+  0.0811 - "n02895154 breastplate, aegis, egis"
+  0.0623 - "n03045698 cloak"
+  0.0460 - "n03958227 plastic bag"
+  0.0435 - "n02883205 bow tie, bow-tie, bowtie"
+  Video[0] total frames = 62
+  Video[0] hit frames = 59
+  Video[0] accuracy = 0.951613
+
+>>[Inference][video 0][frame 62] belongs to: 
+  0.9961 - "n04507155 umbrella", [Hit]
+  0.0013 - "n03637318 lampshade, lamp shade"
+  0.0012 - "n04380533 table lamp"
+  0.0004 - "n03787032 mortarboard"
+  0.0002 - "n03888257 parachute, chute"
+  Video[0] total frames = 63
+  Video[0] hit frames = 60
+  Video[0] accuracy = 0.952381
+
+>>[Inference][video 0][frame 63] belongs to: 
+  0.6873 - "n04507155 umbrella", [Hit]
+  0.0794 - "n04258138 solar dish, solar collector, solar furnace"
+  0.0303 - "n02843684 birdhouse"
+  0.0302 - "n03958227 plastic bag"
+  0.0253 - "n03888257 parachute, chute"
+  Video[0] total frames = 64
+  Video[0] hit frames = 61
+  Video[0] accuracy = 0.953125
+
+>>[Inference][video 0][frame 64] belongs to: 
+  0.4058 - "n03388183 fountain pen"
+  0.1427 - "n02783161 ballpoint, ballpoint pen, ballpen, Biro"
+  0.0773 - "n03372029 flute, transverse flute"
+  0.0566 - "n04154565 screwdriver"
+  0.0493 - "n02804610 bassoon"
+  Video[0] total frames = 65
+  Video[0] hit frames = 61
+  Video[0] accuracy = 0.938462
+
+>>[Inference][video 0][frame 65] belongs to: 
+  0.9968 - "n04579432 whistle", [Hit]
+  0.0024 - "n03692522 loupe, jeweler's loupe"
+  0.0002 - "n02951585 can opener, tin opener"
+  0.0002 - "n03314780 face powder"
+  0.0000 - "n03666591 lighter, light, igniter, ignitor"
+  Video[0] total frames = 66
+  Video[0] hit frames = 62
+  Video[0] accuracy = 0.939394
+
+>>[Inference][video 0][frame 66] belongs to: 
+  0.9451 - "n03388183 fountain pen"
+  0.0318 - "n02783161 ballpoint, ballpoint pen, ballpen, Biro"
+  0.0110 - "n04116512 rubber eraser, rubber, pencil eraser"
+  0.0060 - "n03372029 flute, transverse flute"
+  0.0029 - "n03876231 paintbrush"
+  Video[0] total frames = 67
+  Video[0] hit frames = 62
+  Video[0] accuracy = 0.925373
+
+>>[Inference][video 0][frame 67] belongs to: 
+  0.3689 - "n07614500 ice cream, icecream", [Hit]
+  0.0869 - "n07930864 cup"
+  0.0808 - "n07932039 eggnog"
+  0.0509 - "n02939185 caldron, cauldron"
+  0.0325 - "n02909870 bucket, pail"
+  Video[0] total frames = 68
+  Video[0] hit frames = 63
+  Video[0] accuracy = 0.926471
+
+>>[Inference][video 0][frame 68] belongs to: 
+  0.4595 - "n07579787 plate"
+  0.2753 - "n07614500 ice cream, icecream", [Hit]
+  0.0330 - "n07745940 strawberry"
+  0.0133 - "n07742313 Granny Smith"
+  0.0113 - "n07753275 pineapple, ananas"
+  Video[0] total frames = 69
+  Video[0] hit frames = 64
+  Video[0] accuracy = 0.927536
+
+>>[Inference][video 0][frame 69] belongs to: 
+  0.3389 - "n07873807 pizza, pizza pie", [Hit]
+  0.2677 - "n07613480 trifle"
+  0.1126 - "n07697537 hotdog, hot dog, red hot"
+  0.0493 - "n07871810 meat loaf, meatloaf"
+  0.0349 - "n07745940 strawberry"
+  Video[0] total frames = 70
+  Video[0] hit frames = 65
+  Video[0] accuracy = 0.928571
+
+>>[Inference][video 0][frame 70] belongs to: 
+  0.2616 - "n01978287 Dungeness crab, Cancer magister"
+  0.1797 - "n07590611 hot pot, hotpot"
+  0.1054 - "n01981276 king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica"
+  0.0919 - "n07579787 plate"
+  0.0813 - "n07714990 broccoli"
+  Video[0] total frames = 71
+  Video[0] hit frames = 65
+  Video[0] accuracy = 0.915493
+
+>>[Inference][video 0][frame 71] belongs to: 
+  0.9965 - "n09472597 volcano", [Hit]
+  0.0015 - "n09193705 alp"
+  0.0013 - "n09468604 valley, vale"
+  0.0002 - "n09399592 promontory, headland, head, foreland"
+  0.0002 - "n09246464 cliff, drop, drop-off"
+  Video[0] total frames = 72
+  Video[0] hit frames = 66
+  Video[0] accuracy = 0.916667
+
+>>[Inference][video 0][frame 72] belongs to: 
+  0.2208 - "n07880968 burrito"
+  0.1355 - "n07583066 guacamole"
+  0.1212 - "n07871810 meat loaf, meatloaf"
+  0.1139 - "n07579787 plate"
+  0.1091 - "n07711569 mashed potato"
+  Video[0] total frames = 73
+  Video[0] hit frames = 66
+  Video[0] accuracy = 0.90411
+
+>>[Inference][video 0][frame 73] belongs to: 
+  0.7839 - "n13133613 ear, spike, capitulum", [Hit]
+  0.1908 - "n12144580 corn"
+  0.0041 - "n07754684 jackfruit, jak, jack"
+  0.0024 - "n07718472 cucumber, cuke"
+  0.0017 - "n07716358 zucchini, courgette"
+  Video[0] total frames = 74
+  Video[0] hit frames = 67
+  Video[0] accuracy = 0.905405
+
+>>[Inference][video 0][frame 74] belongs to: 
+  0.6414 - "n13133613 ear, spike, capitulum", [Hit]
+  0.3480 - "n12144580 corn"
+  0.0044 - "n03530642 honeycomb"
+  0.0026 - "n03854065 organ, pipe organ"
+  0.0013 - "n07753275 pineapple, ananas"
+  Video[0] total frames = 75
+  Video[0] hit frames = 68
+  Video[0] accuracy = 0.906667
+

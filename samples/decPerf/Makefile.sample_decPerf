@@ -1,0 +1,83 @@
+.SUFFIXES:
+
+include ../../makes/defines.inc
+
+ISA := $(shell uname -m)
+ifeq ($(ISA),x86_64)
+CC = g++
+CUCC = /usr/local/$(CUDAVERSION)/bin/nvcc -m64
+else ######## 
+$(error Auto-detection of platform failed. x86_64)
+endif
+
+SHELL=/bin/bash
+
+ROOT_PATH=.
+OUTDIR=../bin
+
+# DeepStream sdk
+DEEPSTREAM_INC_PATH = "../../include"
+DEEPSTREAM_LIB_PATH = "../../lib"
+
+INCPATHS    =-I$(CUDA_INC_PATH) -I$(DEEPSTREAM_INC_PATH) -I$(CUVID_INC_PATH) -I"../common"
+LIBPATHS    =-L$(CUDA_LIB_PATH) -L$(TENSORRT_LIB_PATH) -L$(DEEPSTREAM_LIB_PATH) -L$(CUVID_LIB_PATH)
+
+.SUFFIXES:
+
+COMMON_FLAGS += -D_REENTRANT
+
+COMMON_FLAGS += -std=c++11 $(INCPATHS)
+COMMON_LD_FLAGS=$(LIBPATHS) -L$(OUTDIR)
+
+OBJDIR    =$(call concat,$(OUTDIR),/chobj)
+DOBJDIR   =$(call concat,$(OUTDIR),/dchobj)
+LOGDIR    ="./log"
+
+COMMON_LIBS = -lnvinfer -lnvcaffe_parser -ldeepstream -lcudart -lnvcuvid -lpthread
+COMMON_LIBS += -Wl,-rpath=$(CUDA_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(TENSORRT_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(DEEPSTREAM_LIB_PATH)
+COMMON_LIBS += -Wl,-rpath=$(CUVID_LIB_PATH)
+
+LIBS  =$(COMMON_LIBS)
+DLIBS =$(COMMON_LIBS) 
+OBJS   =$(patsubst %.cpp, $(OBJDIR)/%.o, $(wildcard *.cpp))
+DOBJS  =$(patsubst %.cpp, $(DOBJDIR)/%.o, $(wildcard *.cpp))
+
+
+CFLAGS=$(COMMON_FLAGS)
+CFLAGSD=$(COMMON_FLAGS) -g
+LFLAGS=$(COMMON_LD_FLAGS)
+LFLAGSD=$(COMMON_LD_FLAGS)
+
+all: release
+release : $(OUTDIR)/$(OUTNAME_RELEASE)
+debug   : $(OUTDIR)/$(OUTNAME_DEBUG)
+
+$(OUTDIR)/$(OUTNAME_RELEASE) : $(OBJS)
+	$(ECHO) Linking: $@
+	$(AT)$(CC) -o $@ $^ $(LFLAGS) -Wl,--start-group $(LIBS) -Wl,--end-group
+
+$(OUTDIR)/$(OUTNAME_DEBUG) : $(DOBJS)
+	$(ECHO) Linking: $@
+	$(AT)$(CC) -o $@ $^ $(LFLAGSD) -Wl,--start-group $(DLIBS) -Wl,--end-group
+
+$(OBJDIR)/%.o: %.cpp
+	$(AT)if [ ! -d $(OBJDIR) ]; then mkdir -p $(OBJDIR); fi
+	$(call make-depend,$<,$@,$(subst .o,.d,$@))
+	$(ECHO) Compiling: $<
+	$(AT)$(CC) $(CFLAGS) -c -o $@ $<
+
+$(DOBJDIR)/%.o: %.cpp
+	$(AT)if [ ! -d $(DOBJDIR) ]; then mkdir -p $(DOBJDIR); fi
+	$(call make-depend,$<,$@,$(subst .o,.d,$@))
+	$(ECHO) Compiling: $<
+	$(AT)$(CC) $(CFLAGSD) -c -o $@ $<
+
+clean:
+	$(ECHO) Cleaning...
+	$(AT)-rm -rf $(OBJDIR) $(DOBJDIR) $(LOGDIR) $(OUTDIR)/$(OUTNAME_RELEASE) $(OUTDIR)/$(OUTNAME_DEBUG)
+
+ifneq "$(MAKECMDGOALS)" "clean"
+  -include $(OBJDIR)/*.d $(DOBJDIR)/*.d
+endif
