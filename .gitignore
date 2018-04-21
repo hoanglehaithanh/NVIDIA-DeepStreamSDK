@@ -12,9 +12,15 @@
 *.pch
 
 # Compiled Dynamic libraries
-*.so
+#*.so -> due to deepstream.so 
 *.dylib
 *.dll
+
+#Large video files
+*.h264
+*.mp4
+*.MP4
+*.H264
 
 # Fortran module files
 *.mod
