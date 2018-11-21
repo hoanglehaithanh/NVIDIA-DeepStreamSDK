@@ -1,4 +1,6 @@
-# NVIDIA DeepStream SDK 
+# NVIDIA DeepStream SDK 2.0
+
+## THIS IS AN OLD VERSION OF DEEPSTREAM SDK, WHICH USES DIFFRENT ARCHITECTURE FROM LATER VERSIONS. 
 
 ## 1.INTRODUCTION
 
@@ -41,7 +43,7 @@ plug-in implementations. More information can be found in the Samples chap
 ## 4.CUSTOM HARDWARE
 
 ## 5.CUSTOM IMPLEMENTATION
-Some changes are made to run DeepStream as my need.
+In Progress
 
 ## 6.LICENSE
 [NVIDIA DeepStream SDK License Agreement](LicenseAgreement.pdf)
