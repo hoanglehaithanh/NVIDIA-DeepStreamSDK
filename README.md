@@ -5,6 +5,8 @@
 
 ## 1.INTRODUCTION
 
+![](https://cdn-images-1.medium.com/max/2000/1*VNCy5iIQtBS2qO_RBQWpvw.png)
+
 DeepStream provides an easy-to-use and high-performance SDK for video content analysis, which simplifies development of high-performance video analytics applications powered by deep learning. DeepStream enables customer to make optimum use of underlying GPU architectures, including hardware decoding support, thereby achieving high levels of efficiency, performance, and scale. Furthermore, DeepStream provides a flexible plug-in mechanism for the user to incorporate their custom functionality to video analytics applications to meet their unique needs.
 
 DeepStream provides a high-level C++ API for GPU-accelerated video decoding, inference. DeepStream is built on the top of NVCODEC and NVIDIA® TensorRT™, which are responsible for video decoding and deep learning inference, respectively.
